@@ -1,0 +1,17 @@
+# data
+data/
+outputs/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+
+# notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
