@@ -1,0 +1,9 @@
+
+```txt
+torch
+torchvision
+numpy
+opencv-python
+matplotlib
+tqdm
+scikit-learn
