@@ -186,7 +186,7 @@ def run_predict(ckpt_path: Path, make_overlays: bool = True, max_overlays: int =
     )
 
     model = UNet(in_ch=3, out_ch=1, base=32).to(cfg.device)
-    ckpt = torch.load(ckpt_path, map_location=cfg.device)
+    ckpt = torch.load(ckpt_path, map_location=cfg.device, weights_only=False)
 
     # train.py saved dict with "model_state"
     state = ckpt["model_state"] if isinstance(ckpt, dict) and "model_state" in ckpt else ckpt
